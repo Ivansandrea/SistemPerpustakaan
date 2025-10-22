@@ -111,18 +111,27 @@
                                     <td class="px-6 py-4 text-center">
                                         <div class="flex items-center justify-center gap-2">
                                             <a href="{{ route('buku.show', $buku->id_buku) }}"
-                                                class="flex p-2 border-2 border-[#49777B] rounded-full hover:bg-blue-100 hover:shadow-lg">
-                                                <i class='bxr bx-eye'></i>
+                                                class="group relative flex p-2 border-2 border-[#49777B] rounded-full hover:bg-blue-100 hover:shadow-lg transition-all duration-200 w-9 h-9 justify-center items-center overflow-hidden">
+                                                <i
+                                                    class="bx bx-eye absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg"></i>
+                                                <i
+                                                    class="bx bx-eye-closed absolute opacity-100 group-hover:opacity-0 transition-opacity duration-300 text-lg"></i>
                                             </a>
+
                                             <a href="{{ route('buku.edit', $buku->id_buku) }}"
-                                                class="flex p-2 border-2 border-[#49777B] rounded-full hover:bg-green-100 hover:shadow-lg">
-                                                <i class='bx bx-pencil'></i>
+                                                class="group relative flex p-2 border-2 border-[#49777B] rounded-full hover:bg-green-100 hover:shadow-lg transition-all duration-200 w-9 h-9 justify-center items-center overflow-hidden">
+                                                <i
+                                                    class='bx bx-pencil-sparkles absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg'></i>
+                                                <i
+                                                    class='bxr bx-pencil absolute opacity-100 group-hover:opacity-0 transition-opacity duration-300 text-lg'></i>
                                             </a>
-                                            <!-- Form hapus satu baris, TIDAK di dalam form hapus semua -->
                                             <button type="button"
                                                 onclick="if(confirm('Yakin hapus buku ini?')) document.getElementById('delete-form-{{ $buku->id_buku }}').submit();"
-                                                class="flex p-2 border-2 border-[#49777B] rounded-full hover:bg-red-100 hover:shadow-lg">
-                                                <i class='bxr  bx-trash-alt'></i>
+                                                class="group relative flex p-2 border-2 border-[#49777B] rounded-full hover:bg-red-100 hover:shadow-lg transition-all duration-200 w-9 h-9 justify-center items-center overflow-hidden">
+                                                <i
+                                                    class='bxr  bx-trash absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg'></i>
+                                                <i
+                                                    class='bxr  bx-trash-alt absolute opacity-100 group-hover:opacity-0 transition-opacity duration-300 text-lg'></i>
                                             </button>
                                         </div>
                                     </td>
