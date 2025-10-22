@@ -7,12 +7,16 @@ use App\Http\Controllers\controller_peminjaman;
 use App\Http\Controllers\controller_detail_pinjam;
 use App\Http\Controllers\controller_pengembalian;
 use App\Http\Controllers\controller_detail_pengembalian;
+use App\Http\Controllers\controller_homepage;
+
+Route::get('/', [controller_homepage::class, 'index'])->name('beranda');
+
 
 Route::get('/syarat-ketentuan', function () {
     return view('syarat_ketentuan');
 })->name('syarat.ketentuan');
 
-Route::get('/', [controller_buku::class, 'index'])->name('index');
+// Route::get('/', [controller_buku::class, 'index'])->name('index');
 
 // Buku
 Route::get('/buku', [controller_buku::class, 'index'])->name('buku.index');

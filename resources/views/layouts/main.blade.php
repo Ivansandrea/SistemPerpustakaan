@@ -9,6 +9,26 @@
 
     @vite('resources/css/app.css')
 </head>
+<style>
+    * {
+        scroll-behavior: smooth;
+    }
+
+    .tooltip-box {
+        position: fixed;
+        background-color: #1f2937;
+        /* abu gelap */
+        color: white;
+        font-size: 0.75rem;
+        border-radius: 0.5rem;
+        padding: 6px 10px;
+        max-width: 16rem;
+        z-index: 9999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease;
+    }
+</style>
 
 <body class="bg-gradient-to-br from-[#D2C8AA]/30 via-gray-50 to-[#49777B]/20 min-h-screen">
 
@@ -21,10 +41,10 @@
                     class="w-12 h-12 bg-gradient-to-br from-[#F67103] to-[#D4800C] rounded-xl flex items-center justify-center text-2xl shadow-lg">
                     📚
                 </div>
-                <div>
+                <a href="{{ route('beranda') }}">
                     <h2 class="text-xl font-bold">Perpustakaan</h2>
                     <p class="text-xs text-white/70">Sistem Manajemen</p>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -42,7 +62,7 @@
             <hr>
             <a href="{{ route('peminjaman.index') }}"
                 class="flex items-center gap-3 py-3 px-4 rounded-xl hover:bg-white/10 transition-all duration-300 group hover:translate-x-1">
-                <span class="text-xl group-hover:scale-110 transition-transform"><i class='bxr  bx-clipboard-plus'></i>
+                <span class="text-xl group-hover:scale-110 transition-transform"><i class='bxr  bx-clipboard-minus'></i>
                 </span>
                 <span class="font-medium">Peminjaman</span>
             </a>
@@ -55,7 +75,7 @@
             <hr>
             <a href="{{ route('pengembalian.index') }}"
                 class="flex items-center gap-3 py-3 px-4 rounded-xl hover:bg-white/10 transition-all duration-300 group hover:translate-x-1">
-                <span class="text-xl group-hover:scale-110 transition-transform"><i class='bxr  bx-clipboard-minus'></i>
+                <span class="text-xl group-hover:scale-110 transition-transform"><i class='bxr  bx-clipboard-plus'></i>
                 </span>
                 <span class="font-medium">Pengembalian</span>
             </a>
