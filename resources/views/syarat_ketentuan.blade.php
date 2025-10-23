@@ -56,12 +56,5 @@
         </section>
     </div>
 
-    <div class="mt-10 text-center">
-        <a href="{{ route('buku.index') }}"
-           class="px-8 py-3 bg-[#49777B] text-white font-semibold rounded-xl
-           hover:bg-[#3a6166] hover:shadow-lg transition-all duration-300">
-            Kembali ke Halaman Utama
-        </a>
-    </div>
 </div>
 @endsection

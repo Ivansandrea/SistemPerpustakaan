@@ -13,14 +13,14 @@
         <div class="relative z-10 text-white">
             <div class="flex items-center justify-between">
                 <div class="max-w-2xl">
-                    <h1 class="text-5xl font-bold mb-4 leading-tight">
+                    <h1 class="text-2xl md:text-5xl font-bold mb-4 leading-tight">
                         Selamat Datang di <br>
                         <span class="text-[#F67103]">Perpustakaan Digital</span>
                     </h1>
                     <p class="text-xl text-white/90 mb-6">
                         Temukan koleksi buku terbaik untuk menambah wawasan dan pengetahuan Anda
                     </p>
-                    <div class="flex gap-4">
+                    <div class="flex-cols lg:flex gap-4">
                         <a href="#bukubuku"
                             class="px-8 py-4 bg-gradient-to-r from-[#F67103] to-[#D4800C] rounded-xl font-bold text-lg hover:from-[#D4800C] hover:to-[#F67103] hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">
                             <i class='bx bx-book-open text-2xl'></i>
@@ -33,9 +33,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="hidden lg:block">
+                <div class="hidden xl:block">
                     <div
-                        class="w-64 h-64 bg-gradient-to-br from-[#F67103]/20 to-[#D4800C]/20 rounded-full flex items-center justify-center backdrop-blur-sm border-4 border-white/20">
+                        class="lg:w-52 lg:h-52 xl:w-64 xl:h-64 bg-gradient-to-br from-[#F67103]/20 to-[#D4800C]/20 rounded-full flex items-center justify-center backdrop-blur-sm border-4 border-white/20">
                         <i class='bx bxs-book-heart text-9xl text-white/80'></i>
                     </div>
                 </div>
